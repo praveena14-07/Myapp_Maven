@@ -8,6 +8,7 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/praveena14-07/Myapp_Maven.git']]])
             }
         }
+    } 
         
         stage('Build') {
             steps {
